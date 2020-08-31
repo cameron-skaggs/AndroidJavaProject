@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /** Called when the user touches the button */
     public void crashApp(View view) {
+        Analytics.trackEvent("My crash event");
         throw new RuntimeException("The application is crashed");
     }
 }
