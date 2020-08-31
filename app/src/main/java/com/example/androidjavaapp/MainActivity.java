@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
         AppCenter.start(getApplication(), "654bfb92-f7c8-4513-98bc-e1aa114cf442",
                 Analytics.class, Crashes.class);
     }
+    public void doNothing(View view) {
+        Analytics.trackEvent("This is my nothing event");
+    }
     /** Called when the user touches the button */
     public void crashApp(View view) {
         Analytics.trackEvent("My crash event");

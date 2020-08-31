@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to my Test Application"
@@ -17,15 +18,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.094" />
 
+    <!--        tools:ignore="MissingConstraints" />-->
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press to Crash"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
         android:onClick="crashApp"
-        tools:ignore="MissingConstraints" />
-<!--        tools:layout_editor_absoluteX="148dp"-->
-<!--        tools:layout_editor_absoluteY="128dp"-->
+        android:text="Press to Crash"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="46dp"
+        android:text="Press to do nothing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:onClick="doNothing"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
