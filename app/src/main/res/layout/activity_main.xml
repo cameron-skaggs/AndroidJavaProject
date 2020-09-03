@@ -21,7 +21,7 @@
     <!--        tools:ignore="MissingConstraints" />-->
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/crashButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/nothingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
@@ -41,7 +41,7 @@
         android:layout_marginTop="46dp"
         android:text="Press to do nothing"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/crashButton"
         android:onClick="doNothing"/>
 
 
